@@ -13,7 +13,7 @@ class Product
   end
 
   def to_s
-    "#{name} €#{gross_price} "
+    "#{name} €#{'%.2f' %gross_price} "
   end
 
 end

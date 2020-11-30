@@ -14,3 +14,5 @@ IO.foreach('shop.txt') do |line|
   end
 
 puts shopvar.to_s
+
+
