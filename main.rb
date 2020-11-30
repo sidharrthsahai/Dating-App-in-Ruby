@@ -13,6 +13,6 @@ IO.foreach('shop.txt') do |line|
   shopvar.add_product(prod)
   end
 
-puts shopvar.to_s
+ puts shopvar.to_s
 
 
