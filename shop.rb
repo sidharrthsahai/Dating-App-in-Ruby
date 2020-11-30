@@ -1,7 +1,7 @@
 
 
 class Shop
-  attr_reader :products
+  attr_accessor :products
 
   def initialize
     @products = []
@@ -12,9 +12,15 @@ class Shop
   end
 
   def to_s
-    str = "Products in Shop: \n"
+    @products = sortList
     @products.each do |prod|
-      str += prod.to_s + "\n"
+      puts prod.to_s + "\n"
     end
+    puts "Total value in shop:"
+    puts "Average product price"
+  end
+
+  def sortList
+    @products.sort_by {|obj| [obj.name]}
   end
 end
