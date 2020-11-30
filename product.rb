@@ -13,8 +13,7 @@ class Product
   end
 
   def to_s
-    str = gross_price
-    "#{name} €#{str} "
+    "#{name} €#{gross_price} "
   end
 
 end
